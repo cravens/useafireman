@@ -1,0 +1,13 @@
+application: use-a-fireman
+version: 31
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: .*
+  script: UAF.wsgi.application
+
+libraries:
+- name: django
+  version: 1.5

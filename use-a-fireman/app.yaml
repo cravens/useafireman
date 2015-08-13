@@ -1,0 +1,15 @@
+application: use-a-fireman
+version: 33
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: .*
+  script: main.application
+
+libraries:
+- name: django
+  version: 1.5
+- name: webapp2
+  version: "2.5.2"
